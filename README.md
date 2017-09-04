@@ -1,7 +1,7 @@
 
 # imgLightbox
 
-Just another image lightbox.
+Just another simple image lightbox.
 
 For the usage sample please read the source code of the __test.html__!
 
