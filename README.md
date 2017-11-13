@@ -1,9 +1,10 @@
-
 # imgLightbox
 
 Just another simple image lightbox without dependecies.
 
-For the usage sample please read the source code of the __test.html__!
+IE11, mobile browser and ES5 compatible.
+
+For the documentation please read the __imglightbox.html__!
 
 ## How to clone
 
