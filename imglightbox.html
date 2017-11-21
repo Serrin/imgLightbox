@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- version 1.0.3 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<title>imgLightbox</title>
+<meta name="Author" content="Czigler Ferenc">
+
+<link href="imglightbox.min.css" rel="stylesheet" type="text/css">
+<script src="imglightbox.min.js"></script>
+
+<style>
+
+*,:before,:after { box-sizing: border-box; word-break: break-all; word-wrap: break-word;}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: justify;
+  margin: 0 auto;
+  padding: 5px;
+  font-size: 15px;
+  max-width: 900px;
+  width: 100%;
+}
+
+header, footer, h1, h2, .center { text-align: center; }
+
+pre, code {
+  background-color: lightgrey;
+  text-align: left;
+  padding: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;  
+}
+
+code, button { display: inline-block; margin: 2px; }
+
+.thumbnail { width: 300px; height: auto; }
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>imgLightbox</h1>
+  <p>Just another simple image lightbox without dependecies.</p>
+  <p>IE11, mobile browser and ES5 compatible.</p>
+</header>
+
+<hr/>
+
+<h2>API</h2>
+
+<h3>Include</h3>
+
+<p>Insert the .js and .css file in the page header:</p>
+<pre>&#60;link href="imglightbox.min.css" rel="stylesheet" type="text/css"&#62;
+&#60;script src="imglightbox.min.js"&#62;&#60;/script&#62;</pre>
+
+<p>Insert this code in your html page:</p>
+<pre>&#60;div id="imgLightbox" onclick="imgLightbox.close();"&#62;
+  &#60;div id="imgLightbox-button-area"&#62;
+    &#60;a title="download and close" id="imgLightbox-button-download"&#62;
+      &#60;span class="imgLightbox-button"&#62;&amp;#x021A7;&#60;/span&#62;
+    &#60;/a&#62; 
+    &#60;span title="close" class="imgLightbox-button" onclick="imgLightbox.close();"&#62;&amp;Cross;&#60;/span&#62;
+  &#60;/div&#62; 
+&#60;/div&#62;</pre>
+
+<h3>Get the library version:</h3>
+<p>
+  <button onclick="alert( imgLightbox.config.version );">alert</button>
+  <code>alert( imgLightbox.config.version );</code>
+</p>
+
+<h3>Set config.download (default is false):</h3>
+<p>
+  <button onclick="imgLightbox.config.download=true;">set true</button>
+  <code>imgLightbox.config.download = true;</code>
+  <br/>
+  <button onclick="imgLightbox.config.download=false;">set false</button>
+  <code>imgLightbox.config.download = false;</code>
+</p>
+
+<h3>imgLightbox.open() method parameters:</h3>
+<p><code>imgLightbox.open(&#60;filename: string&#62;[,download: boolean]);</code></p>
+
+<hr/>
+
+<h2>Samples</h2>
+
+<h3>Open with the download button</h3>
+<p><code>imgLightbox.open('test1.jpg',true);</code></p>
+<p class="center"><img src="test1-400.jpg" class="thumbnail" onclick="imgLightbox.open('test1.jpg',true);"></p>
+<h3>Open with the config.download setting:</h3>
+<p><code>imgLightbox.open('test1.jpg');</code></p>
+<p class="center"><img src="test1-400.jpg" class="thumbnail" onclick="imgLightbox.open('test1.jpg');"></p>
+<h3>Open without the download button:</h3>
+<p><code>imgLightbox.open('test1.jpg',false);</code></p>
+<p class="center"><img src="test1-400.jpg" class="thumbnail" onclick="imgLightbox.open('test1.jpg',false);"></p>
+
+<hr/>
+
+<h3>Small size image with the download button:</h3>
+<p><code>imgLightbox.open('test2.jpg',true);</code></p>
+<p class="center"><img src="test2.jpg" onclick="imgLightbox.open('test2.jpg',true);"></p>
+<p><code>imgLightbox.open('test2.jpg');</code></p>
+
+<h3>Small size image with the config.download setting:</h3>
+<p><code>imgLightbox.open('test2.jpg');</code></p>
+<p class="center"><img src="test2.jpg" onclick="imgLightbox.open('test2.jpg');"></p>
+
+<h3>Small size image without the download button:</h3>
+<p><code>imgLightbox.open('test2.jpg',false);</code></p>
+<p class="center"><img src="test2.jpg" onclick="imgLightbox.open('test2.jpg',false);"></p>
+
+<hr/>
+
+<div>
+  <p><a href="https://opensource.org/licenses/MIT" target="_blank">https://opensource.org/licenses/MIT</a></p>
+  <h2>MIT License</h2>
+  <p>SPDX short identifier: MIT</p>
+  <p>Copyright (c) 2017 Ferenc Czigler</p>
+  <p>Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:</p>
+  <p>The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.</p>
+  <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.</p>
+</div>
+
+<hr/>
+
+<footer>
+  <small>
+    <p>Free photos from <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></p>
+    <p><a href="https://github.com/Serrin/" target="_blank">Github</a></p>
+    <p>&copy; Ferenc Czigler 2017</p>
+  </small>
+</footer>
+
+<!-- Insert these code into the page: -->
+<div id="imgLightbox" onclick="imgLightbox.close();">
+  <div id="imgLightbox-button-area">
+    <a title="download and close" id="imgLightbox-button-download">
+      <span class="imgLightbox-button">&#x021A7;</span>
+    </a>
+    <span title="close" class="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</span>
+  </div> 
+</div>
+
+</body>
+</html>
