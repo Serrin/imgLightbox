@@ -1,4 +1,18 @@
 
+# imgLightbox
+
+Just another simple image lightbox without dependecies.
+
+IE11, mobile browser and ES5 compatible.
+
+For the documentation please read the __imglightbox.html__!
+
+## How to clone
+
+    $ git clone https://github.com/Serrin/imgLightbox/
+
+## License
+
 https://opensource.org/licenses/MIT
 
 MIT License

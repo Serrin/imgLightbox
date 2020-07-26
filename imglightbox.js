@@ -1,6 +1,6 @@
 /**
  * imglightbox
- * @version 1.0.3
+ * @version 1.0.4
  * @author Ferenc Czigler <serrin.salamander@gmail.com>
  * @see https://github.com/Serrin/
  *
@@ -12,14 +12,14 @@ var imgLightbox = (function(){
   "use strict";
   return {
     config: {
-      version: "1.0.3",
+      version: "1.0.4",
       download: false
     },
     open: function (filename, download) {
       if (typeof download !== "boolean") { download = this.config.download; }
       var els = document.getElementById("imgLightbox").style;
       els.backgroundImage = "url('"+filename+"')";
-      els.display="block";
+      els.display = "block";
       var dlbtn = document.getElementById("imgLightbox-button-download");
       if (download) {
         dlbtn.style.display = "inline-block";

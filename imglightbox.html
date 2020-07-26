@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- version 1.0.3 -->
+<!-- version 1.0.4 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -8,15 +8,15 @@
 <title>imgLightbox</title>
 <meta name="Author" content="Czigler Ferenc">
 
-<link href="imglightbox.min.css" rel="stylesheet" type="text/css">
-<script src="imglightbox.min.js"></script>
+<link href="imglightbox.css" rel="stylesheet" type="text/css">
+<script src="imglightbox.js"></script>
 
 <style>
 
 *,:before,:after { box-sizing: border-box; word-break: break-all; word-wrap: break-word;}
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   margin: 0 auto;
   padding: 5px;
@@ -32,7 +32,7 @@ pre, code {
   text-align: left;
   padding: 5px;
   white-space: pre-wrap;
-  word-wrap: break-word;  
+  word-wrap: break-word;
 }
 
 code, button { display: inline-block; margin: 2px; }
@@ -64,10 +64,10 @@ code, button { display: inline-block; margin: 2px; }
 <pre>&#60;div id="imgLightbox" onclick="imgLightbox.close();"&#62;
   &#60;div id="imgLightbox-button-area"&#62;
     &#60;a title="download and close" id="imgLightbox-button-download"&#62;
-      &#60;span class="imgLightbox-button"&#62;&amp;#x021A7;&#60;/span&#62;
-    &#60;/a&#62; 
+      &#60;span class="imgLightbox-button"&#62;&amp;DownArrowBar;&#60;/span&#62;
+    &#60;/a&#62;
     &#60;span title="close" class="imgLightbox-button" onclick="imgLightbox.close();"&#62;&amp;Cross;&#60;/span&#62;
-  &#60;/div&#62; 
+  &#60;/div&#62;
 &#60;/div&#62;</pre>
 
 <h3>Get the library version:</h3>
@@ -155,10 +155,10 @@ code, button { display: inline-block; margin: 2px; }
 <div id="imgLightbox" onclick="imgLightbox.close();">
   <div id="imgLightbox-button-area">
     <a title="download and close" id="imgLightbox-button-download">
-      <span class="imgLightbox-button">&#x021A7;</span>
+      <span class="imgLightbox-button">&DownArrowBar;</span>
     </a>
     <span title="close" class="imgLightbox-button" onclick="imgLightbox.close();">&Cross;</span>
-  </div> 
+  </div>
 </div>
 
 </body>

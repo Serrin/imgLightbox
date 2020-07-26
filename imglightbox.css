@@ -1,6 +1,6 @@
 /**
  * imglightbox
- * @version 1.0.3
+ * @version 1.0.4
  * @author Ferenc Czigler <serrin.salamander@gmail.com>
  * @see https://github.com/Serrin/
  *
@@ -9,9 +9,10 @@
  */
 
 #imgLightbox {
+  font-family: Arial, Helvetica, sans-serif !important;
   background-image: url('');
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: contain;
   background-position: center center;
   position: fixed;
   top: 0%;
@@ -42,7 +43,7 @@
   color: white;
   font-size: 40px;
   z-index: 9999999;
-}  
+}
 
 .imgLightbox-button {
   display: inline-block;
