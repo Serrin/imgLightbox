@@ -1,8 +1,8 @@
 /**
  * imglightbox
- * @version 1.0.4
+ * @version 1.0.5
  * @author Ferenc Czigler <serrin.salamander@gmail.com>
- * @see https://github.com/Serrin/
+ * @see https://github.com/Serrin/imgLightbox
  *
  * <link href="imglightbox.css" rel="stylesheet" type="text/css">
  * <script src="imglightbox.js"></script>
@@ -31,7 +31,7 @@
 #imgLightbox a:hover,
 #imgLightbox a:active,
 #imgLightbox a:visited {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 #imgLightbox-button-area {
@@ -58,7 +58,7 @@
   opacity: 1;
 }
 
-#imgLightbox-button-download {
+#imgLightbox-button-download, #imgLightbox-button-newwindow {
   display: none;
   color: white !important;
 }
